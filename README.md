@@ -1,5 +1,5 @@
 # Yet-Another-Reaction-Ticket-System
-Reaction Ticket Systems seem to be quite popular so I decided to make my own as I didn't like tha fact that other systems used so many ccs.
+***Reaction Ticket Systems seem to be quite popular so I decided to make my own as I didn't like tha fact that other systems used so many ccs.***
 
 **The benefits this system has over the standard ticket system:**
 
@@ -24,3 +24,5 @@ disable all standard ticket commands under control panel > core > command settin
 -uses only 2 CCs and therefore takes up little space and takes less time to add
 
 -fits a lot of functionality into only 2 CCs
+
+If you find any bugs, feel free to DM me on Discord, my Username is ***@MeinNameHalt#2569***
