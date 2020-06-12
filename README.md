@@ -1,7 +1,7 @@
 # Yet-Another-Reaction-Ticket-System
 Reaction Ticket Systems seem to be quite popular so I decided to make my own as I didn't like tha fact that other systems used so many ccs.
 
-**The benefits this system has over the standard ticket system:
+**The benefits this system has over the standard ticket system:**
 
 -Automatically deletes tickets after a certain amount of time being inactive (the time of inactivity can be configured, standard is 3h inactivity)
 
@@ -15,11 +15,11 @@ Reaction Ticket Systems seem to be quite popular so I decided to make my own as 
 
 -you can have logs/a transcript of the ticket sent to you in DM without having to close the ticket
 
-**Requirements/Recommendations to make this system work properly:
+**Requirements/Recommendations to make this system work properly:**
 
 disable all standard ticket commands under control panel > core > command settings > command ovverrides
 
-**Benefits this has over other reaction ticket systems:
+**Benefits this has over other reaction ticket systems:**
 
 -uses only 2 CCs and therefore takes up little space and takes less time to add
 
