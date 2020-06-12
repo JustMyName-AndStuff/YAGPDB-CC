@@ -92,7 +92,9 @@ sendMessageRetID nil (complexMessage
 
 {{else if or (eq (lower (index .CmdArgs 0)) (joinStr "" $prefix "adduser")) (eq (lower (index .CmdArgs 0)) (joinStr "" $prefix "add"))}}
 
-{{if eq (len .CmdArgs) 2}}
+{{if (ge (len .CmdArgs) 2)}}
+
+{{if (userArg (index .CmdArgs 1))}}
 
 {{with (userArg (index .CmdArgs 1)).ID}}
 
@@ -106,11 +108,19 @@ Please provide a valid User
 
 {{end}}
 
+{{else}}
+
+Correct Usage: {{print (index .CmdArgs 0) " <user mention or user ID>"}}
+
+{{end}}
+
  
 
 {{else if or (eq (lower (index .CmdArgs 0)) (joinStr "" $prefix "removeuser")) (eq (lower (index .CmdArgs 0)) (joinStr "" $prefix "remove"))}}
 
-{{if eq (len .CmdArgs) 2}}
+{{if (ge (len .CmdArgs) 2)}}
+
+{{if (userArg (index .CmdArgs 1))}}
 
 {{with (userArg (index .CmdArgs 1)).ID}}
 
@@ -121,6 +131,12 @@ Please provide a valid User
 {{else}}
 
 Please provide a valid User
+
+{{end}}
+
+{{else}}
+
+Correct Usage: {{print (index .CmdArgs 0) " <user mention or user ID>"}}
 
 {{end}}
 
