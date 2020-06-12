@@ -33,9 +33,10 @@ The variables in this particluar code MUST be defined*/}}
 {{/*CONFIGURATION VARIABLES START, THESE ARE VARIABLES THAT YOU **MUST** DEFINE*/}}
 
 
-{{/*This is the EMOJI people react on to open a new ticket, theres currently no support for custom emoji, for now you can only use an Emoji Unicode, if you don't know how to get an emoji unicode, visit https://emojipedia.org/ and search for the emoji you want to add (you can use the emoji name, like for example "joy" or "regional_indicator_a" and you can copy the unicode)*/}}
+{{/*This is the EMOJI people react on to open a new ticket, theres currently no support for custom emoji, for now you can only use an Emoji Unicode, if you don't know how to get an emoji unicode, visit https://emojipedia.org/ and search for the emoji you want to add (you can use the emoji name, like for example "joy" or "regional_indicator_a" and you can copy the unicode)
+BACKTICKS (`) ARE REQUIRED TO MAKE THIS WORK!*/}}
 
-{{$emoji := 📩}}
+{{$emoji := `📩`}}
  
 
 {{/*The CATEGORY ID where tickets are created in (in your server)
