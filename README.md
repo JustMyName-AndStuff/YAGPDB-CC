@@ -25,4 +25,4 @@ disable all standard ticket commands under control panel > core > command settin
 
 -fits a lot of functionality into only 2 CCs
 
-If you find any bugs, feel free to DM me on Discord, my Username is ***@MeinNameHalt#2569***
+If you find any bugs, feel free to DM me on Discord, my Username is ***MeinNameHalt#2569***
