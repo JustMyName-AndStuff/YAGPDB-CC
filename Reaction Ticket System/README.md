@@ -2,7 +2,10 @@
 ***Reaction Ticket Systems for YAGPDB seem to be quite popular so I decided to make my own as I didn't like the fact that other systems used so many ccs. Keep in mind these Custom Commands are NOT stand-alone, you either add all or none!***
 
 # Important Note before skimming this README:
-**In order for the automatic deletion of tickets to work, you will have to open a ticket and type ANY message in that ticket, at first you will get an error saying "error calling scheduleUniqueCC: did not find the specified CC" all you need to do to fix this is type ANY MESSAGE in the FIRST TICKET YOU OPENED, once you typed a message, that error will never appear again :)**
+**I recommend adding the different codes in a spefific order:
+1. Add the inactivity checker cc
+2. Add the Reaction-CC
+3. Add the code that goes in the "opening message in new tickets" box**
 
 # Information on this Custom Ticket System:
 
