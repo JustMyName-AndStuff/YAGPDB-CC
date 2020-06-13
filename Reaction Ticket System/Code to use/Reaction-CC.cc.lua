@@ -1,6 +1,6 @@
 {{/*This is the "Reaction Listener" command. It is the main part of the ticket system.
 
- 
+ This is the SECOND bit of code to setup!
 
           In order to initially set up the ticket system, you must react with ANY STANDARD EMOJI (not custom emoji) on the
 
