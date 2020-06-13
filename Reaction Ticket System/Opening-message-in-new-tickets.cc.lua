@@ -1,6 +1,6 @@
 {{/*This code goes in the "Opening message in new tickets" message under tools&utilities > ticket system
 
-There are only two values to configure here, all other values are defined in the Reaction listener cc*/}}
+There are only 2 optional values to configure here, all other values are defined in the Reaction listener cc*/}}
 
 {{/*CONFIGURATION VARIABLES START, THESE VALUES CAN OPTIONALLY BE CHANGED, HOWEVER IT IS NOT OBLIGATORY TO CHANGE THEM*/}}
 
