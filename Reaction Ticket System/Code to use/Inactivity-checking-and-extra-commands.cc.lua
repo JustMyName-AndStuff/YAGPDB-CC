@@ -1,6 +1,6 @@
 {{/*This custom command code manages the add/adduser, remove/removeuser, resend and rename commands
 
- This is the FIRST BIT OF CODE you should add!
+ This is the FIRST bit of code you should add!
 
 Trigger type: Regex
 
