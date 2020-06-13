@@ -1,4 +1,4 @@
-{{/*This command manages the add/adduser, remove/removeuser, resend and rename commands
+{{/*This command manages the add/adduser, remove/removeuser, resend and rename commands and also manages the automatic deletion of inactive tickets
 
  
 
