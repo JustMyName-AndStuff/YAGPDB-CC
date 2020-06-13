@@ -1,12 +1,14 @@
-{{/*This command manages the add/adduser, remove/removeuser, resend and rename commands and also manages the automatic deletion of inactive tickets
+{{/*This custom command code manages the add/adduser, remove/removeuser, resend and rename commands
 
-Don't change anything! there are no variables to configure in this CC
-
- 
+ This is the FIRST CODE you should add!
 
 Trigger type: Regex
 
 Trigger: \A
+
+ 
+
+There are no variables to configure in this code, leave it as it is
 
 */}}
 
@@ -41,10 +43,6 @@ Trigger: \A
 {{dbDel (toInt64 (dbGet .Channel.ID "ticketauth").Value) "ticketactive"}}
 
 {{end}}
-
- 
-
-{{dbSet (toInt64 0) "ticketinactivecc" (toString .CCID)}}
 
  
 
