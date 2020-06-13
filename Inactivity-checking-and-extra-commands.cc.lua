@@ -36,8 +36,6 @@ Trigger: \A
 
 {{exec .ExecData}}
 
-{{dbDel .Channel.ID "ticketmsg"}}
-
 {{dbDel (toInt64 (dbGet .Channel.ID "ticketauth").Value) "ticketactive"}}
 
 {{end}}
