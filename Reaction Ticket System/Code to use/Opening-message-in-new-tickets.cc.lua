@@ -1,4 +1,6 @@
 {{/*This code goes in the "Opening message in new tickets" message under tools&utilities > ticket system
+    
+    This is the LAST bit of code to set up
 
 There are only 2 optional values to configure here, all other values are defined in the Reaction listener cc*/}}
 
