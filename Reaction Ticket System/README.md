@@ -2,7 +2,7 @@
 ***Reaction Ticket Systems for YAGPDB seem to be quite popular so I decided to make my own as I didn't like the fact that other systems used so many ccs. Keep in mind these Custom Commands are NOT stand-alone, you either add all or none!***
 
 # Important Note before skimming this README:
-**I recommend adding the different codes in a spefific order:**
+**I recommend adding the different codes in a specific order:**
 
 1. Add the inactivity checker cc
 
