@@ -16,7 +16,7 @@ Option to choose: Added Reactions only
 
  
 
-This is the main set-up cc, in the Code for the "Opening message in new tickets" response box there are 2 more values that can optionally be changed 
+This is the main set-up cc, in the Code for the "Opening message in new tickets" response box there are 2 more values that can be optionally changed
 
 these values are:
 
@@ -26,17 +26,26 @@ these values are:
 
  
 
-The variables in this particluar code MUST be defined*/}}
+All the variables in this particular code MUST be defined*/}}
 
  
 
 {{/*CONFIGURATION VARIABLES START, THESE ARE VARIABLES THAT YOU **MUST** DEFINE*/}}
 
+ 
 
 {{/*This is the EMOJI people react on to open a new ticket, theres currently no support for custom emoji, for now you can only use an Emoji Unicode, if you don't know how to get an emoji unicode, visit https://emojipedia.org/ and search for the emoji you want to add (you can use the emoji name, like for example "joy" or "regional_indicator_a" and you can copy the unicode)
+
 BACKTICKS (`) ARE REQUIRED TO MAKE THIS WORK!*/}}
 
 {{$emoji := `📩`}}
+
+ 
+
+{{/*the CC-ID of the custom command that manages the resend, rename, adduser, removeuser commands and the inactivity of tickets (the one with the \A regex trigger)*/}}
+
+{{$ccID := 268}}
+
  
 
 {{/*The CATEGORY ID where tickets are created in (in your server)
@@ -83,10 +92,6 @@ Side Note: The cooldown is per user, not global*/}}
 
  
 
-{{$ccID := toInt (dbGet (toInt64 0) "ticketinactivecc").Value}}
-
- 
-
 {{$ticketmsg := toInt (dbGet .Channel.ID "ticketmsg").Value}}
 
  
@@ -99,7 +104,7 @@ Side Note: The cooldown is per user, not global*/}}
 
 {{deleteMessageReaction nil .Reaction.MessageID .Reaction.UserID .Reaction.Emoji.Name}}
 
-{{dbSet (toInt64 0) "ticketsetup" "true"}}
+{{dbSet (toInt64 0) "ticketsetup" true}}
 
 {{dbSet (toInt64 0) "inactiveticketcc" (toString $ccID)}}
 
@@ -184,4 +189,3 @@ Reaction Ticket System is now active, __**Remember to disable all built-in ticke
  
 
 {{/*END OF CODE*/}}
-
