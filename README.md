@@ -1,5 +1,5 @@
 # Yet-Another-Reaction-Ticket-System
-***Reaction Ticket Systems for YAGPDB seem to be quite popular so I decided to make my own as I didn't like the fact that other systems used so many ccs.***
+***Reaction Ticket Systems for YAGPDB seem to be quite popular so I decided to make my own as I didn't like the fact that other systems used so many ccs. Keep in mind these Custom Commands are NOT stand-alone, you either add all or none!***
 
 **The benefits this system has over the standard ticket system:**
 
