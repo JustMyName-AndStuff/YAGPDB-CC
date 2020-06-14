@@ -8,7 +8,7 @@
 
 -a decision command (approve/deny/consider/implement) *also quite obvious*
 
--a configuarble cooldown on the suggest command so suggestions can't be spammed
+-a configurable cooldown on the suggest command so suggestions can't be spammed
 
 -choose which colors should be used for the different suggestion statuses (default/approved/denied/considered/implemented)
 
