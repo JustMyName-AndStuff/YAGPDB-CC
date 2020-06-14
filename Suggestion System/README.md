@@ -2,7 +2,7 @@
 
 **There are a few suggestion systems out there, however all require around 4 CCs, my goal was to get as much into a single CC as possible. And this is what I have till now:**
 
--a suggestionshelp/suggestions help command that gives you all available commands (option to remove will exist in the future)
+-a suggestionshelp/suggestions help command that gives you all available commands (OPTIONAL)
 
 -a suggest command to submit suggestions *(obviously)*
 
