@@ -4,9 +4,9 @@
 
 -Custom Reaction Ticket System
 
-**What will be added in the future:**
+-Suggestion System with dynamic change of embed colors (UNFINISHED!!!)
 
--Suggestion System with dynamic change of embed colors
+**What will be added in the future:**
 
 -An RPG bot (currently I have a currency system setup and I am thinking of turning it into an RPG bot)
 
