@@ -1,0 +1,40 @@
+{{/*This is the help command, set $prefix to the same prefix you use for the main suggestion command
+
+     THIS COMMAND IS OPTIONAL! YOU DON'T HAVE TO ADD IT!
+     
+     recommended trigger: regex trigger
+     trigger: \A(YOUR_PREFIX_GOES_HERE)suggestion(help|shelp|(\s|\b)help|s(\s|\b)help)
+     
+     replace "(YOUR_PREFIX_GOES_HERE)" with the same prefix that you use in $prefix
+*/}}
+
+{{/*CONFIGURATION VARIABLES START*/}}
+
+{{$prefix := "-"}}
+
+{{/*CONFIGURATION VARIABLES END*/}}
+
+{{sendMessage nil (cembed "title"
+":grey_question: Suggestions Help"
+"description" 
+(joinStr "" "**`" $prefix "Suggest <Your Suggestion>`**: Creates a new suggestion" 
+"\n\n" 
+"**`"
+$prefix "EditSuggestion <Suggestion ID> <New Text>`**: Edits an existing suggestion (You can only edit suggestions that were sent by you. Approved, considered, denied and implemented suggestions cannot be edited"
+"\n\n"
+"**`" 
+$prefix "DeleteSuggestion <Suggestion ID>`**: Deletes the selected suggestion (You can only delete suggestions that were sent by you. Approved, considered and implemented suggestions cannot be deleted)"
+"\n\n"
+"__**Staff-only Commands**__:" 
+"\n\n" 
+"**`" $prefix "Deny <Suggestion ID> [Reason]`**: Denies another User's suggestion with an optional reason" 
+"\n\n"
+"**`" $prefix "Approve <Suggestion ID> [Reason]`**: Approves another User's suggestion with an optional reason"
+"\n\n"
+"**`"
+$prefix "Consider <Suggestion ID> [Reason]`**: Marks another User's suggestion as 'Considered' with an optional reason" "\n\n" "**`" $prefix "Implement <Suggestion ID> [Reason]`**: Marks another User's suggestion as 'Implemented' with an optional reason"
+"\n\n"
+"**`" 
+$prefix "DeleteSuggestion <Suggestion ID> -Override`**: Deletes the selected suggestion (can delete any suggestion)") 
+"color" 65535 
+"footer" (sdict "text" "The Suggestion ID is placed in the footer of the suggestion, as is this text."))}}
