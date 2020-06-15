@@ -1,4 +1,5 @@
 # Suggestion System (UNFINISHED!!!)
+# I temporarily removed the system from github as I was encountering far too many bugs. Once I get it all fixed up and done I'll post it again
 
 **There are a few suggestion systems out there, however all require around 4 CCs, my goal was to get as much into a single CC as possible. And this is what I have till now:**
 
