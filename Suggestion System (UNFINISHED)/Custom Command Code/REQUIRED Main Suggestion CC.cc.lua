@@ -175,7 +175,7 @@ ffa100   - This would not work! This is a hex color, all hex colors must start w
  
 {{if (eq $cmd (print $prefix "suggest"))}}
 
-{{if (dbGet .User.ID "suggestcd")}}⚠️ {{.User.Mention}} This command is still on cooldown for: {{humanizeDurationSeconds ((dbGet .User.ID "suggestcd").ExpiresAt.Sub currentTime)}}{{deleteResponse 5}}{{else}}{{dbSetExpire .User.ID "suggestcd" "suggestions" $cooldown}}
+{{if (dbGet .User.ID "suggestcd")}}⚠️ {{.User.Mention}} This command is still on cooldown for: {{humanizeDurationSeconds ((dbGet .User.ID "suggestcd").ExpiresAt.Sub currentTime)}}{{else}}{{dbSetExpire .User.ID "suggestcd" "suggestions" $cooldown}}
 
 
 {{if ge (len .CmdArgs) 2}}
@@ -220,8 +220,6 @@ You have to actually suggest something ;)
 
 Correct Usage: `{{$prefix}}Suggest <Your Suggestion>`
 
-{{deleteResponse 5}}
-
 {{end}}
 
 {{end}}
@@ -240,8 +238,6 @@ Correct Usage: `{{$prefix}}Suggest <Your Suggestion>`
 
 You do not have permission to use this command!
 
-{{deleteResponse 5}}
-
 {{end}}
 
 {{if eq $isStaff true}}
@@ -257,8 +253,6 @@ You do not have permission to use this command!
 {{if not (reFind "Suggestion" (index (getMessage $SuggestionsChan $msgID).Embeds 0).Title)}}
 
 Please provide a valid Suggestion ID, either the message you provided does not exist or it is not a suggestion
-
-{{deleteResponse 5}}
 
 {{else}}
 
@@ -336,7 +330,6 @@ Please provide a valid Suggestion ID, either the message you provided does not e
 
 {{else}}
 
- 
 
 {{$decMsg := sendMessageRetID $DecisionChan (cembed "title" $suggestion.Title
 
@@ -382,20 +375,17 @@ Please provide a valid Suggestion ID, either the message you provided does not e
 
 Please provide a valid Suggestion ID, either the message you provided does not exist or it is not a suggestion
 
-{{deleteResponse 5}}
-
 {{end}}
 
 {{else}}
 
 Not enough arguments passed, please provide a suggestion ID
+                                                                                                    
+{{end}}
 
+{{end}}
+{{deleteTrigger 1}}                                                                     
 {{deleteResponse 5}}
-
 {{end}}
 
-{{end}}
-
-{{end}}
-
-{{deleteTrigger 1}}
+{{/*END OF CODE*/}}
