@@ -22,4 +22,6 @@
 
 -deleteSuggestion command
 
+-revoke command that revokes a decision made on a suggestion (changes suggestion back to default)
+
 -Reaction CC that will limit suggestions to 1 vote per user and dynamically change the color based on number of upvotes/downvotes
