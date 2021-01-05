@@ -4,7 +4,9 @@
 
 -Custom Reaction Ticket System
 
--Suggestion System with dynamic change of embed colors (UNFINISHED!!!)
+-Suggestion System with dynamic change of embed colors
+
+-Reaction Verification Command with custom DM
 
 
 If you have any suggestions for CCs that I can make feel free to DM me on Discord or ping me in the YAGPDB Support Server, my DC User is *MeinNameHalt#2569*
