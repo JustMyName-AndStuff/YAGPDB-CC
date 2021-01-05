@@ -1,6 +1,6 @@
 # Suggestion System
 
-**There are a few suggestion systems out there, however all require around 4 CCs, my goal was to get as many features into as few CCs as possible. And this is what I have till now:**
+**There are a few suggestion systems out there, however most require around 4 CCs, my goal was to get as many features into as few CCs as possible. And this is what I have till now:**
 
 -a suggestionshelp/suggestions help command that gives you all available commands
 
@@ -18,10 +18,10 @@
 
 -editsuggestion command with configurable cooldown
 
-**What is still coming up:**
+-deletesuggestion command
 
--deleteSuggestion command
+**What is still coming up:**
 
 -revoke command that revokes a decision made on a suggestion (changes suggestion back to default)
 
--Reaction CC that will limit suggestions to 1 vote per user and dynamically change the color based on number of upvotes/downvotes
+-Reaction CC that will dynamically change the color based on number of upvotes/downvotes
