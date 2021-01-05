@@ -22,6 +22,8 @@
 
 -comment command
 
+-anonymous suggestions (OPTIONAL)
+
 **What is still coming up:**
 
 -revoke command that revokes a decision made on a suggestion (changes suggestion back to default)
