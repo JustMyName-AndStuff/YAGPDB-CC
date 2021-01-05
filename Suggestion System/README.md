@@ -16,7 +16,7 @@
 
 -choose which prefix should be used for the suggestion system (default prefix is "-")
 
--editsuggestion command with configurable cooldown
+-editsuggestion command
 
 -deletesuggestion command
 
