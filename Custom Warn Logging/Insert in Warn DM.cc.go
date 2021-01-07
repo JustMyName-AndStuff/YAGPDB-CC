@@ -45,7 +45,7 @@ If you would like the optional banned words extension, add the "banned words ext
       {{else if or (not (reFind "word blacklist" .Reason)) (not (dbGet 0 "banned words"))}}
            
            {{if reFind `Automoderator:` .Reason}}
-           {{$reason = sdict "name" ":page_facing_up: Reason: " "value" (reReplace `Automoderator:\s` .Reason "") "inline" false}}
+{{$reason = sdict "name" ":page_facing_up: Reason: " "value" (reReplace `Triggered Rule:\s` (reReplace `Automoderator:\s` .Reason "") "") "inline" false}}
            
            {{else}}
            {{$reason = sdict "name" ":page_facing_up: Reason: " "value" .Reason "inline" false}}
