@@ -28,7 +28,7 @@ If you would like the optional banned words extension, add the "banned words ext
 
 {{$author := sdict "name" (print .Author.String " (ID: " .Author.ID " )") "icon_url" (.Author.AvatarURL "256")}}
 {{$thumbnail := sdict "url" (.User.AvatarURL "256")}}
-{{$title := print "has :warning: warned " .User.String " (ID: " .User.ID " )"}}
+{{$title := print ":warning: has warned " .User.String " (ID: " .User.ID " )"}}
 {{$timestamp := currentTime}}
 
 {{$reason := ""}}
