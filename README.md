@@ -4,7 +4,7 @@
 
 -Custom Reaction Ticket System
 
--Suggestion System with dynamic change of embed colors
+-Suggestion System
 
 -Reaction Verification Command with custom DM
 
