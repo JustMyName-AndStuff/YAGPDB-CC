@@ -10,5 +10,7 @@
 
 -Custom Warn logging with optional banned words extension
 
+-Boost responder that responds to the system boost message via a reaction, custom thank you message and optionally giving rep
+
 
 If you have any suggestions for CCs that I can make feel free to DM me on Discord or ping me in the YAGPDB Support Server, my DC User is *MeinNameHalt#2569*
