@@ -40,7 +40,7 @@ If you would like the optional banned words extension, add the "banned words ext
      
 {{if and (reFind "(?i)word blacklist" .Reason) (dbGet 0 "banned words")}}
            
-           {{$reason = sdict "name" ":grey_question: Reason: " "value" (print "Sending the banned word ||" (reFind $bannedWords .Message.Content) "||") "inline" false}}
+           {{$reason = sdict "name" ":grey_question: Reason: " "value" (print "Sending the banned word ||" (reFind $bannedWords (lower .Message.Content)) "||") "inline" false}}
 
 {{else if or (not (reFind "(?i)word blacklist" .Reason)) (not (dbGet 0 "banned words"))}}
            
