@@ -38,11 +38,11 @@ If you would like the optional banned words extension, add the "banned words ext
 
  {{if .Reason}}
      
-      {{if and (reFind "banned words" .Reason) (dbGet 0 "banned words")}}
+{{if and (reFind "(?i)word blacklist" .Reason) (dbGet 0 "banned words")}}
            
            {{$reason = sdict "name" ":grey_question: Reason: " "value" (print "Sending the banned word ||" (reFind $bannedWords .Message.Content) "||") "inline" false}}
 
-      {{else if or (not (reFind "word blacklist" .Reason)) (not (dbGet 0 "banned words"))}}
+{{else if or (not (reFind "(?i)word blacklist" .Reason)) (not (dbGet 0 "banned words"))}}
            
            {{if reFind `Automoderator:` .Reason}}
 {{$reason = sdict "name" ":page_facing_up: Reason: " "value" (reReplace `Triggered rule:\s` (reReplace `Automoderator:\s` .Reason "") "") "inline" false}}
