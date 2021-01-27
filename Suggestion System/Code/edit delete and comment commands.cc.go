@@ -54,7 +54,7 @@ There are no configuration variables here, leave everything as it is!
 
 {{$subcmd := " "}}
 
-{{if or (reFind (print `\A` $prefix `edit(suggest(ion|\b|\s)|sgt)`) .StrippedMsg) (eq $cmd (print $prefix "comment"))}}
+{{if or (reFind (print `\A` $prefix `(?i)edit(suggest(ion)?|sgt)`) .StrippedMsg) (eq $cmd (print $prefix "comment"))}}
 
 {{if reFind (print `\A` $prefix `edit(suggest(ion|\b|\s)|sgt)`) .StrippedMsg}}
 
@@ -88,7 +88,7 @@ A decision has already been made on this suggestion! Meaning it has been approve
 
 {{else}}
 
-{{if reFind (print `\A` $prefix `edit(suggest(ion|\b|\s)|sgt)`) .StrippedMsg}}
+{{if reFind (print `\A` $prefix `(?i)edit(suggest(ion)?|sgt)`) .StrippedMsg}}
 
 {{if (ne .User.ID (toInt64 (reFind `\d{16,20}` (index (getMessage $SuggestionsChan $msgID).Embeds 0).Author.Name)))}}
 
