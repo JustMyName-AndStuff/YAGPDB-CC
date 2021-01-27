@@ -130,7 +130,7 @@ Note: if you have a decision channel denied suggestions will still get sent ther
 
 {{$reason := "No reason specified"}}
 
-{{if reFind (print `\A` $prefix `/(?i)suggestions?\s?help/gm`) .StrippedMsg}}
+{{if reFind (print `\A` $prefix `/(?i)suggestions?\s?help`) .StrippedMsg}}
 
 {{sendMessage nil (cembed "title" ":grey_question: Suggestions Help"
 
