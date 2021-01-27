@@ -130,7 +130,7 @@ Note: if you have a decision channel denied suggestions will still get sent ther
 
 {{$reason := "No reason specified"}}
 
-{{if reFind (print `\A` $prefix `suggestion((shelp|help|s(\s|\b)help|(\s|\b)help)(\s|\z|\b))`) .StrippedMsg}}
+{{if reFind (print `\A` $prefix `/(?i)suggestions?\s?help/gm`) .StrippedMsg}}
 
 {{sendMessage nil (cembed "title" ":grey_question: Suggestions Help"
 
@@ -168,7 +168,7 @@ $prefix "EditSuggestion <Suggestion ID> <New Text>`**: Edits an existing suggest
 
  
 
-{{else if (eq $cmd (print $prefix "suggest"))}}
+{{else if or (eq $cmd (print $prefix "suggest")) (eq $cmd (print $prefix "suggestion"))}}
 
 {{$dbGet := dbGet .User.ID "suggestcd"}}
 
